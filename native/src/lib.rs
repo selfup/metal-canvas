@@ -15,7 +15,7 @@ use game::*;
 use grid::*;
 use bike::*;
 
-fn game(call: Call) -> JsObject {
+fn game(call: Call) -> JsResult<JsObject> {
     let scope = call.scope;
 
     let game = Game::new(Grid::new(800, 0, 800, 0),
@@ -24,7 +24,7 @@ fn game(call: Call) -> JsObject {
 
     let js_obj = JsObject::new(&mut game);
 
-    Ok(js_obj).unwrap()
+    Ok(js_obj)
 }
 
 register_module!(m, {
