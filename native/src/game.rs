@@ -1,9 +1,12 @@
+extern crate neon;
+
 use check::*;
 use grid::*;
 use bike::*;
 
 /// Game struct. Knows about itself, Grid, and Bike. Main engine! ********************************
 
+#[derive(Scope)]
 pub struct Game {
     pub grid: Grid,
     pub bike_one: Bike,
