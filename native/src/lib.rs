@@ -2,7 +2,6 @@
 extern crate neon;
 
 use neon::vm::{Call, JsResult, Module};
-use neon::js::JsString;
 use neon::js::JsObject;
 
 mod game;
