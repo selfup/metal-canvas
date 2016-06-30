@@ -1,0 +1,12 @@
+[package]
+name = "metal-canvas"
+version = "0.1.0"
+authors = ["selfup <boudinot.regis@yahoo.com>"]
+license = "MIT"
+
+[lib]
+name = "metal_canvas"
+crate-type = ["dylib"]
+
+[dependencies]
+neon = "0.1"
